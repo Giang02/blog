@@ -9,15 +9,11 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
 const bodyParser = require("body-parser");
-const cors = require('cors');
 
 dotenv.config();
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")));
 app.use(bodyParser.json());
-app.use(cors({
-    origin: '*'
-}));
 
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
