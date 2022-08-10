@@ -22,7 +22,8 @@
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "engines": {
-    "node": "18.6.0"
+    "node": "18.6.0",
+    "npm": "8.16.0"
   },
   "author": "",
   "license": "ISC",
